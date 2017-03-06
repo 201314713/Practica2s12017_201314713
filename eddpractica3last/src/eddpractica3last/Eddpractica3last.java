@@ -19,7 +19,7 @@ public class Eddpractica3last {
         
         new pmenu().setVisible(true);
           Client class2 = new Client();
-          class2.client();
+          class2.client("Kel");
     }
     
 }

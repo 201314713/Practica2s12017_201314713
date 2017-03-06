@@ -27,8 +27,8 @@ public class Client {
     /**
      * @param args the command line arguments
      */
-    public static void client() {
-        String nombre = "Marco";
+    public static void client(String nombre) {
+        
         RequestBody formBody = new FormEncodingBuilder()
                 .add("dato", nombre)
                 .add("dato2", "4")
