@@ -1,4 +1,24 @@
+from flask import Flask, request, Response
+app = Flask("EDD_codigo_practica2")
 
+class Usuario():
+    def __init__(self, password, correo, nombre):
+        self.nombre = nombre
+        self.password = password
+        self.correo = correo
+
+@app.route('/metodoWeb',methods=['POST']) 
+def hello():
+	parametro = str(request.form['dato'])
+	dato2 = str(request.form['dato2'])
+	return "Hola " + str(parametro) + "!"
+
+@app.route("/e")
+def hellof():
+	return "Hello World2!"
+
+if __name__ == "__main__":
+  app.run(debug=True, host='0.0.0.0')
 
 
 class Nodo:
@@ -79,8 +99,6 @@ class lSimples:
 	 	file.write("fucking") 
 	 	file.write("tired")
 	 	file.close() 
-
-
     		
 
 

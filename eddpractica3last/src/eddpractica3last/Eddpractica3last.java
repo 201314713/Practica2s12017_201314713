@@ -18,6 +18,8 @@ public class Eddpractica3last {
         // TODO code application logic here
         
         new pmenu().setVisible(true);
+          Client class2 = new Client();
+          class2.client();
     }
     
 }
